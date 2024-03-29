@@ -1,0 +1,62 @@
+title:
+  en: Default
+  de: Standard
+tabs:
+  content:
+    label:
+      en: Content
+      de: Inhalt
+    icon: text
+    fields:
+      blocks:
+        type: blocks
+        label:
+          en: Blocks
+          de: Blöcke
+  subpages:
+    label:
+      en: Subpages
+      de: Unterseiten
+    icon: book
+    columns:
+      top:
+        width: 1/1
+        sections:
+          drafts:
+            type: pages
+            label:
+              en: Drafts
+              de: Entwürfe
+            status: draft
+      left:
+        width: 1/2
+        sections:
+          unlisted:
+            type: pages
+            label:
+              en: Unlisted
+              de: Ungelistet
+            status: unlisted
+      right:
+        width: 1/2
+        sections:
+          listed:
+            type: pages
+            label:
+              en: Published
+              de: Veröffentlicht
+            status: listed
+  settings:
+    label:
+      en: Settings
+      de: Einstellungen
+    icon: cog
+  media:
+    label:
+      en: Media
+      de: Medien
+    icon: file
+    sections:
+      files:
+        type: files
+  seotab: seo

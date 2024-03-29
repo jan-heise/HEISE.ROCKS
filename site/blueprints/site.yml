@@ -1,0 +1,155 @@
+title:
+  en: Site
+  de: Seite
+tabs:
+  content:
+    label:
+      en: Content
+      de: Inhalt
+    icon: text
+    sections:
+      pages:
+        label:
+          en: Pages
+          de: Seiten
+        type: pages
+        info:
+          en: "{{ page.children.count }} Subpages"
+          de: "{{ page.children.count }} Unterseiten"
+        default: default
+        files:
+          type: files
+  navigationTab:
+    label:
+      en: Navigation
+      de: Navigation
+    icon: menu
+    fields:
+      nav_main:
+        label:
+          en: Main menu
+          de: Hauptmenü
+        type: structure
+        fields:
+          text:
+            label:
+              en: Label
+              de: Label
+            type: text
+            required: true
+          link:
+            label:
+              en: Link
+              de: Link
+            type: link
+            options:
+              - url
+              - page
+              - anchor
+            required: true
+          target:
+            label:
+              en: Open in
+              de: Öffnen in
+            type: toggles
+            default: _self
+            options:
+              - value: _self
+                text:
+                  en: Current tab
+                  de: Aktueller Tab
+              - value: _blank
+                text:
+                  en: New tab
+                  de: Neuer Tab
+            required: true
+      nav_secondary:
+        label:
+          en: Secondary menu
+          de: Sekundärmenü
+        type: structure
+        fields:
+          text:
+            label:
+              en: Label
+              de: Label
+            type: text
+            required: true
+          link:
+            label:
+              en: Link
+              de: Link
+            type: link
+            options:
+              - url
+              - page
+              - anchor
+            required: true
+          target:
+            label:
+              en: Open in
+              de: Öffnen in
+            type: toggles
+            default: _self
+            options:
+              - value: _self
+                text:
+                  en: Current tab
+                  de: Aktueller Tab
+              - value: _blank
+                text:
+                  en: New tab
+                  de: Neuer Tab
+            required: true
+      nav_footer:
+        label:
+          en: Footer menu
+          de: Footermenü
+        type: structure
+        fields:
+          text:
+            label:
+              en: Label
+              de: Label
+            type: text
+            required: true
+          link:
+            label:
+              en: Link
+              de: Link
+            type: link
+            options:
+              - url
+              - page
+              - anchor
+            required: true
+          target:
+            label:
+              en: Open in
+              de: Öffnen in
+            type: toggles
+            default: _self
+            options:
+              - value: _self
+                text:
+                  en: Current tab
+                  de: Aktueller Tab
+              - value: _blank
+                text:
+                  en: New tab
+                  de: Neuer Tab
+            required: true
+  settings:
+    label:
+      en: Settings
+      de: Einstellungen
+    icon: cog
+    fields:
+      copyright:
+        label:
+          en: Copyright
+          de: Copyright
+        before: "© {{ site.getYear }}"
+        type: text
+  socialMediaTab: social_media_entries
+  seotab: seo

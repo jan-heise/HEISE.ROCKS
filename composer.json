@@ -1,0 +1,33 @@
+{
+  "name": "heise.rocks/heise.rocks",
+  "description": "HEISE.ROCKS Homepage",
+  "type": "project",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jan Heise",
+      "email": "jan@heise.rocks",
+      "homepage": "https://heise.rocks"
+    }
+  ],
+  "homepage": "https://heise.rocks",
+  "require": {
+    "php": ">=8.0.0 <8.3.0",
+    "beebmx/kirby-env": "^4.2",
+    "getkirby/layouts": "^2.0.1",
+    "diesdasdigital/kirby-meta-knight": "^1.2.2",
+    "getkirby/cms": "^4.1.2",
+    "deployer/deployer": "^7.3.3",
+    "heise.rocks/kirby-social-media-links": "^1.0.1",
+    "heise.rocks/kirby-panel-year": "^1.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.15.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    },
+    "optimize-autoloader": true
+  }
+}

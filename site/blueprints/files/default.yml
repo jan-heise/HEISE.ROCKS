@@ -1,0 +1,7 @@
+accept: image/jpeg, image/png, image/webp
+fields:
+  alt:
+    label:
+      en: Alternate text
+      de: Alternativer Text
+    type: text
